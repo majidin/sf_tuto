@@ -1,3 +1,9 @@
 main:
-    path:     /site
+    path:     /{_locale}/site
     defaults: { _controller: MainBundle:Default:index }
+    requirements:
+        _locale: en|fr
+    
+    
+    
+    

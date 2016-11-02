@@ -4,11 +4,11 @@
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width">
-        <title>{% block title %}Base{% endblock %}</title>
+        <title>{% block title %} {{ 'base.title'|trans }} {% endblock %}</title>
         {% block stylesheets %}
 		{% stylesheets '@MainBundle/Resources/public/css/bootstrap.min.css'
-			       '@MainBundle/Resources/public/css/font-awesome.min.css' 
-                   '@MainBundle/Resources/public/css/main.css' filter='cssrewrite' %}
+			           '@MainBundle/Resources/public/css/font-awesome.min.css' 
+                       '@MainBundle/Resources/public/css/main.css' filter='cssrewrite' %}
                    
 		 <link  rel="stylesheet"  href="{{ asset_url }}" />
 		{% endstylesheets %}
